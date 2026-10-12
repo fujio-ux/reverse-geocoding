@@ -1,0 +1,247 @@
+{
+ "source": "デジタル庁 アドレス・ベース・レジストリ（町字マスター・町字マスター位置参照拡張、CC BY 4.0）",
+ "data_date": 20261010,
+ "points": 209330,
+ "skipped_no_name": 128311,
+ "files": {
+  "rgeo_all.bin": {
+   "points": 209330,
+   "bytes": 3674154
+  },
+  "pref/rgeo_01.bin": {
+   "pref": "北海道",
+   "points": 27426,
+   "bytes": 398081
+  },
+  "pref/rgeo_02.bin": {
+   "pref": "青森県",
+   "points": 3337,
+   "bytes": 60917
+  },
+  "pref/rgeo_03.bin": {
+   "pref": "岩手県",
+   "points": 3618,
+   "bytes": 93049
+  },
+  "pref/rgeo_04.bin": {
+   "pref": "宮城県",
+   "points": 5273,
+   "bytes": 109868
+  },
+  "pref/rgeo_05.bin": {
+   "pref": "秋田県",
+   "points": 1821,
+   "bytes": 40024
+  },
+  "pref/rgeo_06.bin": {
+   "pref": "山形県",
+   "points": 2732,
+   "bytes": 49879
+  },
+  "pref/rgeo_07.bin": {
+   "pref": "福島県",
+   "points": 3605,
+   "bytes": 75935
+  },
+  "pref/rgeo_08.bin": {
+   "pref": "茨城県",
+   "points": 4597,
+   "bytes": 74806
+  },
+  "pref/rgeo_09.bin": {
+   "pref": "栃木県",
+   "points": 2545,
+   "bytes": 45709
+  },
+  "pref/rgeo_10.bin": {
+   "pref": "群馬県",
+   "points": 1972,
+   "bytes": 39396
+  },
+  "pref/rgeo_11.bin": {
+   "pref": "埼玉県",
+   "points": 6216,
+   "bytes": 95377
+  },
+  "pref/rgeo_12.bin": {
+   "pref": "千葉県",
+   "points": 6595,
+   "bytes": 98628
+  },
+  "pref/rgeo_13.bin": {
+   "pref": "東京都",
+   "points": 6390,
+   "bytes": 87693
+  },
+  "pref/rgeo_14.bin": {
+   "pref": "神奈川県",
+   "points": 5357,
+   "bytes": 75200
+  },
+  "pref/rgeo_15.bin": {
+   "pref": "新潟県",
+   "points": 7583,
+   "bytes": 138566
+  },
+  "pref/rgeo_16.bin": {
+   "pref": "富山県",
+   "points": 3399,
+   "bytes": 63060
+  },
+  "pref/rgeo_17.bin": {
+   "pref": "石川県",
+   "points": 3125,
+   "bytes": 59703
+  },
+  "pref/rgeo_18.bin": {
+   "pref": "福井県",
+   "points": 2957,
+   "bytes": 54111
+  },
+  "pref/rgeo_19.bin": {
+   "pref": "山梨県",
+   "points": 1124,
+   "bytes": 23576
+  },
+  "pref/rgeo_20.bin": {
+   "pref": "長野県",
+   "points": 1914,
+   "bytes": 38121
+  },
+  "pref/rgeo_21.bin": {
+   "pref": "岐阜県",
+   "points": 6763,
+   "bytes": 108983
+  },
+  "pref/rgeo_22.bin": {
+   "pref": "静岡県",
+   "points": 3914,
+   "bytes": 66187
+  },
+  "pref/rgeo_23.bin": {
+   "pref": "愛知県",
+   "points": 15419,
+   "bytes": 234423
+  },
+  "pref/rgeo_24.bin": {
+   "pref": "三重県",
+   "points": 3090,
+   "bytes": 62142
+  },
+  "pref/rgeo_25.bin": {
+   "pref": "滋賀県",
+   "points": 2555,
+   "bytes": 49446
+  },
+  "pref/rgeo_26.bin": {
+   "pref": "京都府",
+   "points": 15064,
+   "bytes": 552238
+  },
+  "pref/rgeo_27.bin": {
+   "pref": "大阪府",
+   "points": 8905,
+   "bytes": 127503
+  },
+  "pref/rgeo_28.bin": {
+   "pref": "兵庫県",
+   "points": 9505,
+   "bytes": 160841
+  },
+  "pref/rgeo_29.bin": {
+   "pref": "奈良県",
+   "points": 2667,
+   "bytes": 51112
+  },
+  "pref/rgeo_30.bin": {
+   "pref": "和歌山県",
+   "points": 2021,
+   "bytes": 40041
+  },
+  "pref/rgeo_31.bin": {
+   "pref": "鳥取県",
+   "points": 1636,
+   "bytes": 32300
+  },
+  "pref/rgeo_32.bin": {
+   "pref": "島根県",
+   "points": 1257,
+   "bytes": 28898
+  },
+  "pref/rgeo_33.bin": {
+   "pref": "岡山県",
+   "points": 2689,
+   "bytes": 49772
+  },
+  "pref/rgeo_34.bin": {
+   "pref": "広島県",
+   "points": 3824,
+   "bytes": 67173
+  },
+  "pref/rgeo_35.bin": {
+   "pref": "山口県",
+   "points": 2506,
+   "bytes": 45688
+  },
+  "pref/rgeo_36.bin": {
+   "pref": "徳島県",
+   "points": 1557,
+   "bytes": 36250
+  },
+  "pref/rgeo_37.bin": {
+   "pref": "香川県",
+   "points": 912,
+   "bytes": 18305
+  },
+  "pref/rgeo_38.bin": {
+   "pref": "愛媛県",
+   "points": 2675,
+   "bytes": 47313
+  },
+  "pref/rgeo_39.bin": {
+   "pref": "高知県",
+   "points": 1983,
+   "bytes": 39939
+  },
+  "pref/rgeo_40.bin": {
+   "pref": "福岡県",
+   "points": 6621,
+   "bytes": 103666
+  },
+  "pref/rgeo_41.bin": {
+   "pref": "佐賀県",
+   "points": 970,
+   "bytes": 23971
+  },
+  "pref/rgeo_42.bin": {
+   "pref": "長崎県",
+   "points": 2148,
+   "bytes": 48580
+  },
+  "pref/rgeo_43.bin": {
+   "pref": "熊本県",
+   "points": 2504,
+   "bytes": 49063
+  },
+  "pref/rgeo_44.bin": {
+   "pref": "大分県",
+   "points": 2071,
+   "bytes": 45070
+  },
+  "pref/rgeo_45.bin": {
+   "pref": "宮崎県",
+   "points": 1520,
+   "bytes": 27738
+  },
+  "pref/rgeo_46.bin": {
+   "pref": "鹿児島県",
+   "points": 1748,
+   "bytes": 37541
+  },
+  "pref/rgeo_47.bin": {
+   "pref": "沖縄県",
+   "points": 1220,
+   "bytes": 24995
+  }
+ }
+}

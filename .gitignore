@@ -1,0 +1,6 @@
+# 展開した元データ（zip はリポジトリに入れている。tools/fetch.sh で展開できる）
+raw/*.csv
+raw/pos/*.csv
+# パソコンで作る試験用の実行ファイル
+c/rgeo_cli
+.DS_Store
