@@ -4,3 +4,6 @@ raw/pos/*.csv
 # パソコンで作る試験用の実行ファイル
 c/rgeo_cli
 .DS_Store
+# 1970 年・2000 年の元データ（大きいので入れない。取り方は tools/build_history.py の先頭）
+raw/history/
+raw/h12/
