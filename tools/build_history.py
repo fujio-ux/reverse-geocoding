@@ -145,6 +145,25 @@ def main():
     build_2000(lat, lon, rows)
 
 
+KANJI_DIGITS = '〇一二三四五六七八九'
+
+
+def kanji_number(n):
+    """1〜99 を漢数字に（例：1→一、10→十、12→十二、40→四十）。範囲外はそのまま"""
+    if not 1 <= n <= 99:
+        return str(n)
+    tens, ones = divmod(n, 10)
+    return ('' if tens == 0 else ('十' if tens == 1 else KANJI_DIGITS[tens] + '十')) + ('' if ones == 0 else KANJI_DIGITS[ones])
+
+
+def normalize_chome(name):
+    """「丸の内１丁目」「４０丁目」のように、丁目の前の数字（全角・半角）だけを漢数字にする（今のデータの「丸の内一丁目」に合わせる）。
+    条・号など丁目以外の数字は変えない"""
+    import re
+    return re.sub(r'([0-9０-９]+)丁目',
+                  lambda m: kanji_number(int(m.group(1).translate(str.maketrans('０１２３４５６７８９', '0123456789')))) + '丁目', name)
+
+
 def load_h12():
     """平成 12 年国勢調査の町丁・字の形と名前（水面などは除く）"""
     import glob
@@ -160,7 +179,7 @@ def load_h12():
             m = pref + (gst + css if css else (col['CITY_NAME'][i] or gst))
             polys.append(geom[i])
             muni.append(m)
-            town.append(col['S_NAME'][i] or '')
+            town.append(normalize_chome(col['S_NAME'][i] or ''))
     return shapely.from_wkb(polys), muni, town
 
 
@@ -233,4 +252,11 @@ def build_bounds(dates):
 
 
 if __name__ == '__main__':
+    # 丁目の正規化の確認
+    assert normalize_chome('丸の内１丁目') == '丸の内一丁目'
+    assert normalize_chome('戸頭5丁目') == '戸頭五丁目'
+    assert normalize_chome('十二丁目') == '十二丁目'
+    assert normalize_chome('４０丁目') == '四十丁目' and normalize_chome('１２丁目') == '十二丁目' and normalize_chome('２１丁目') == '二十一丁目'
+    assert normalize_chome('北一条西１０丁目') == '北一条西十丁目'
+    assert normalize_chome('春光町一区１１条') == '春光町一区１１条'
     sys.exit(main())
