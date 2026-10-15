@@ -187,7 +187,8 @@ def build_2000(lat, lon, rows):
             table.append(key)
         idx[i] = names[key]
     write_old(os.path.join(OUT, 'old2000.bin'), idx, table, 20001001)
-    print(f'町字 {len(rows)}（2000 年の町丁・字が分からない {int((a < 0).sum())}）、old2000.bin 名前 {len(table) - 1}')
+    noname = sum(1 for k in a if k >= 0 and not town[k])
+    print(f'町字 {len(rows)}（2000 年の区域に入らない {int((a < 0).sum())}、区域はあるが名前が無い {noname}）、old2000.bin 名前 {len(table) - 1}')
 
 
 def write_old(path, idx, table, date):
